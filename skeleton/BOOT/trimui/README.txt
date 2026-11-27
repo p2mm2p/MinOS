@@ -17,7 +17,7 @@ trimui/ 将被复制到 SDCARD 根目录。
 文件列表
 ========
 
-- MainUI:       原版 runtrimui.sh 或 main.sh 的执行脚本
+- MainUI:       劫持程序
 - main.sh:      smart 版本的替换件
 - runtrimui.sh: smart pro/brick 版本的替换件
 
@@ -25,8 +25,8 @@ trimui/ 将被复制到 SDCARD 根目录。
 劫持流程
 ========
 
-1. 原版 runtrimui.sh 或 main.sh 执行 SDCARD 根目录的 MainUI 程序
-2. MainUI 替换原版的 main.sh  或 runtrimui.sh
+1. 原版 runtrimui.sh 或 main.sh 执行 SDCARD 根目录的 MainUI 劫持程序
+2. MainUI 备份并替换原版的 main.sh 或 runtrimui.sh
 3. MainUI 复制 .tmp_update 到 SDCARD 根目录
 4. MainUI 删除整个 trimui/ 目录（MainUI 自身在内存中，在退出前不会被删除）
 5. MainUI 执行 .tmp_uddate/updater
